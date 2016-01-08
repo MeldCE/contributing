@@ -1,4 +1,4 @@
-# <!--MeldCE--> Opensource Coding Standards
+# MeldCE Opensource Coding Standards
 
 ## File Formatting
 
