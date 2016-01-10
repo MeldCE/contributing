@@ -42,6 +42,28 @@ if(thisReallyReallyReallyLongVarName == 'something that is really long'
 			});
 }
 ```
+Lines should be wrapped using the following preferences:
+1. After a comma used to separate function arguments, eg
+   ```javascript
+	 someFunc('longArg',
+	     'longArg2');
+	 ```
+2. Before the `.` on chaining functions, eg
+   ```javascript
+	 someVar
+	     .someFunc('longArg')
+			 .anotherFunc('longArg');
+	 ```
+3. Before Logical operators
+   ```javascript
+	 if (someReallyLongVar === anotherReallyLongVar
+	     && anotherVar !== somethingElse) {
+	 ```
+3. Before comparison operators
+   ```javascript
+	 if (somethingReallyLong
+	     === something) {
+	 ```
 
 ### Naming
 Constants should be named using uppercase characters and underscores,
@@ -59,3 +81,5 @@ used for minimising names).
 Counters, such as those used in `for` statements can be single letters, for
 example `for (o in objects)`.
 
+### Other
+Strict comparison operators should be used.
